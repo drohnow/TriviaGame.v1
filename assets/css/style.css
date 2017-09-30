@@ -1,0 +1,290 @@
+body {
+  background-image: url("../images/imgBasketball.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: Black
+} 
+
+.divTriviaBanner {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: Black;
+  margin: 0;
+  padding: 0;
+  line-height: -34px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+
+}
+
+.divTriviaBanner h1 {
+  font-size: 68px;
+  color: Orange;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 550px;
+}
+
+
+.divStartButton {
+	margin-top: 0px;
+	width: 200px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 235px;
+}
+
+
+
+.startButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.startButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.startButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.startButton:hover span {
+  padding-right: 25px;
+}
+
+.startButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.divTriviaContainer {
+	width: 900px;
+	height: 750px;
+  background-image: url("../images/nbaBG2.jpg");
+  background-size: 870px 800px;
+  background-repeat: no-repeat;
+	background-color: Black;
+	opacity: 0.9;
+  color: White;
+	overflow: scroll;
+	margin-left: auto;
+	margin-right: auto;
+  position: absolute;
+  top: 89px;
+  left: 380px;
+}
+
+
+.imgNBA {
+  width: 390px;
+  height:239px;
+  position: absolute;
+  z-index: 4;
+  
+}
+
+#imgLebronJames {
+  left: 600px;
+  top: 100px;
+}
+
+
+#imgMJ {
+  left: 600px;
+  top: 610px;
+}
+
+
+#imgLarryBird {
+  left: 600px;
+  top: 338px;
+  height: 272px;
+
+}
+
+#imgMagic {
+  right: 300px;
+  top: 100px;
+}
+
+#imgKobeBryant {
+  right: 300px;
+  top: 338px;
+  height: 272px;
+
+}
+
+#imgStephenCurry {
+  right: 300px;
+  top: 610px;
+}
+
+#imgKyrie {
+  right: 0px;
+  top: 100px;
+  width: 250px;
+  height:739px;
+  z-index: 3;
+}
+
+
+.divTriviaContainer h2 {
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 34px;
+  position: relative;
+}
+
+
+#divTimer {
+  width: 200px;
+  height: 75px;
+  background-color: White;
+  border-radius: 16px;
+  position: absolute;
+  right: 350px;
+  top: 10px;
+  z-index: 3;
+  color: Black;
+  text-align: center;
+  line-height: 70px;
+  border: solid 2px Black;
+}
+
+#divTimer h2 {
+  font-size: 42px;
+}
+
+#divYellTimer {
+  width: 500px;
+  height: 80px;
+  background-color: Black;
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  z-index: 10;
+  line-height: 69px;
+}
+
+#gameYell-H2 {
+  color: White;
+  font-size: 32px;
+}
+
+
+.formTrivia {
+  font-size: 20px;
+  color: White;
+}
+
+
+
+
+.formTrivia li {
+	margin-top: 10px;
+  margin-left: 50px;
+}
+
+
+.formTrivia ul {
+	margin-top: 15px;
+	margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.startHidden {
+  display: none;
+}
+
+
+.divResultsContainer {
+  width: 900px;
+  height: 800px;
+  background-color: #e67300;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/imgJordanBG.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 900px 800px;
+  background-color: Gray;
+  opacity: .8;
+   position: absolute;
+  top: 89px;
+  left: 380px;
+}
+
+/*.divResultsContainer h1 {
+  text-align: center;
+  font-size: 72px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: White;
+} */
+
+.divResultsContainer h2 {
+  font-size: 80px;
+  margin-top: 10px;
+  color: White;
+  text-align: center;
+}
+
+.divResultsContainer p {
+  margin-left: 550px;
+  font-size: 48px;
+  margin-top: 65px;
+  color: White;
+  
+}
+
+
+
+#done {
+  font-size: 32px;
+  border-radius: 16px;
+  
+} 
+
+#divDone {
+  width: 100px;
+  height: 75px;
+  border-radius: 16px;
+  
+  position: absolute;
+  right: 200px;
+  top: 10px;
+  z-index: 3;
+  text-align: center;
+  line-height: 70px;
+  border: solid 2px Black;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The NBA Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+  
+    <button class="startButton" style="vertical-align:middle"><span>Start</span></button>
+
+	<div class="divTriviaBanner">
+		<h1 id="banner"> NBA Trivia Game </h1>
+	</div>
+
+		<img id="imgLebronJames" class="imgNBA" src="./assets/images/imgLebronJames.jpg">
+		<img id="imgStephenCurry" class="imgNBA" src="./assets/images/imgStephenCurry.jpg">
+		<img id="imgMJ" class="imgNBA" src="./assets/images/imgMJ.jpg">
+		<img id="imgMagic" class="imgNBA" src="./assets/images/imgMagic.jpg">
+		<img id="imgLarryBird" class="imgNBA" src="./assets/images/imgLarryBird.jpeg">
+		<img id="imgKobeBryant" class="imgNBA " src="./assets/images/imgKobeBryant.jpg">
+    <img id="imgKyrie" class="imgNBA " src="./assets/images/imgKyrie.jpeg">
+
+   
+
+ 
+
+    <button id="testButton" style="vertical-align:middle"><span>test</span></button>
+
+    <source src="./assets/sounds/victoryff.swf.mp3" type="audio/mpeg" id="soundHorn">
+
+
+    
+    
+		
+	
+	<div id="divTimer" class="startHidden">
+		<h2 id="gameTimer">2:00</h2>
+	</div>
+
+    <div id="divYellTimer" class="startHidden">
+        <h2 id="gameYell-H2"></h2>
+    </div>
+  
+
+
+
+		<div id="startButton" class="divStartButton">
+		  <button class="startButton" style="vertical-align:middle"><span>Start</span></button>
+    </div>	
+
+
+
+	<div id="triviaContainer" class="divTriviaContainer startHidden">
+		<h2 id="triviaContainer-H2">Answer 20 Questions in 2 minutes</h2>
+
+
+		  <form class="formTrivia">
+    <ol style="list-style-type: default;"> 
+      <li> 1) Michael Jordan was drafted third overall in 1984. Which two players were selected ahead of him?</li>
+        <ul id="q1" style="list-style-type: none;">
+          <li><input type="radio" name = "questionOne" value = "correct" style="text-decoration: none;"> Sam Bowie & Hakeem Olajuwon</li>
+          <li><input type="radio" name = "questionOne" value = "incorrect" style="text-decoration: none;"> Patrick Ewing & Hakeem Olajuwon </li>
+          <li><input type="radio" name = "questionOne" value = "incorrect" style="text-decoration: none;"> Charles Barkley & Hakeem Olajuwon</li>
+          <li><input type="radio" name = "questionOne" value = "incorrect" style="text-decoration: none;"> Karl Malone & Sam Bowie</li>
+        </ul>
+
+      <li> 2) What year was the National Basketball Association first established?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionTwo" value = "incorrect" style="text-decoration: none;"> 1935</li>
+          <li><input type="radio" name = "questionTwo" value = "correct" style="text-decoration: none;"> 1946</li>
+          <li><input type="radio" name = "questionTwo" value = "incorrect" style="text-decoration: none;"> 1958</li>
+          <li><input type="radio" name = "questionTwo" value = "incorrect" style="text-decoration: none;"> 1962</li>
+        </ul>
+        
+      <li> 3) What year did the NBA-ABA merger occur?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionThree" value = "incorrect" style="text-decoration: none;"> 1970</li>
+          <li><input type="radio" name = "questionThree" value = "incorrect" style="text-decoration: none;"> 1968</li>
+          <li><input type="radio" name = "questionThree" value = "incorrect" style="text-decoration: none;"> 1972</li>
+          <li><input type="radio" name = "questionThree" value = "correct" style="text-decoration: none;"> 1976</li>
+        </ul>
+
+      <li> 4) Who is the only coach to win both a NCAA and NBA championship?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionFour" value = "incorrect" style="text-decoration: none;"> Phil Jackson</li>
+          <li><input type="radio" name = "questionFour" value = "incorrect" style="text-decoration: none;"> Steve Kerr</li>
+          <li><input type="radio" name = "questionFour" value = "correct" style="text-decoration: none;"> Larry Brown</li>
+          <li><input type="radio" name = "questionFour" value = "incorrect" style="text-decoration: none;"> Chuck Daly</li>
+        </ul>
+      <li> 5) Who was the first African American to play in an NBA game?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionFive" value = "incorrect" style="text-decoration: none;"> Earl Monroe</li>
+          <li><input type="radio" name = "questionFive" value = "incorrect" style="text-decoration: none;"> Wilt Chamberlin</li>
+          <li><input type="radio" name = "questionFive" value = "incorrect" style="text-decoration: none;"> Bill Russel</li>
+          <li><input type="radio" name = "questionFive" value = "correct" style="text-decoration: none;"> Earl Lloyd</li>
+        </ul>
+
+      <li> 6) Which NBA team has the most championships?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionSix" value = "incorrect" style="text-decoration: none;"> Los Angeles Lakers<li>
+          <li><input type="radio" name = "questionSix" value = "incorrect" style="text-decoration: none;"> Chicago Bulls</li>
+          <li><input type="radio" name = "questionSix" value = "correct" style="text-decoration: none;"> Boston Celtics</li>
+          <li><input type="radio" name = "questionSix" value = "incorrect" style="text-decoration: none;"> Houston Rockets</li>
+        </ul>
+
+
+      <li> 7) Which player has scored the most points in the NBA?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionSeven" value = "incorrect" style="text-decoration: none;"> Michael Jordan<li>
+          <li><input type="radio" name = "questionSeven" value = "incorrect" style="text-decoration: none;"> Kobe Bryant</li>
+          <li><input type="radio" name = "questionSeven" value = "incorrect" style="text-decoration: none;"> Karl Malone</li>
+          <li><input type="radio" name = "questionSeven" value = "correct" style="text-decoration: none;"> Kareem Adul Jabar</li>
+        </ul>
+
+      <li> 8) In what city did the Los Angeles Lakers originally play in?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionEight" value = "incorrect" style="text-decoration: none;"> San Diego, California<li>
+          <li><input type="radio" name = "questionEight" value = "incorrect" style="text-decoration: none;"> Detroit, Michigan</li>
+          <li><input type="radio" name = "questionEight" value = "correct" style="text-decoration: none;"> Minneapolis, Minnesota</li>
+          <li><input type="radio" name = "questionEight" value = "incorrect" style="text-decoration: none;"> Rochester, New York</li>
+        </ul>
+
+      <li> 9) Wilt Chamberlain once scored 100 points in a game. Which player has the second-highest total points in a single game?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionNine" value = "incorrect" style="text-decoration: none;"> Michael Jordan<li>
+          <li><input type="radio" name = "questionNine" value = "incorrect" style="text-decoration: none;"> Kareem Abdul Jabbar</li>
+          <li><input type="radio" name = "questionNine" value = "incorrect" style="text-decoration: none;"> Adrian Dantley</li>
+          <li><input type="radio" name = "questionNine" value = "correct" style="text-decoration: none;"> Kobe Bryant</li>
+        </ul>
+
+      <li> 10) Who guarded Michael Jordan when he made his buzzer-beater against Cleveland in the 1989 playoffs?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionTen" value = "incorrect" style="text-decoration: none;"> Bryon Russell<li>
+          <li><input type="radio" name = "questionTen" value = "correct" style="text-decoration: none;"> Craig Ehlo</li>
+          <li><input type="radio" name = "questionTen" value = "incorrect" style="text-decoration: none;"> Joe Dumars</li>
+          <li><input type="radio" name = "questionTen" value = "incorrect" style="text-decoration: none;"> Charles Barkley</li>
+        </ul>
+
+     <li> 11) How long is a regulation NBA game?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionEleven" value = "incorrect" style="text-decoration: none;"> 40 Minutes<li>
+          <li><input type="radio" name = "questionEleven" value = "incorrect" style="text-decoration: none;"> 100 Minutes<li>
+          <li><input type="radio" name = "questionEleven" value = "correct" style="text-decoration: none;"> 48 Minutes</li>
+          <li><input type="radio" name = "questionEleven" value = "incorrect" style="text-decoration: none;"> 60 Minutes</li>
+        </ul>
+
+      <li> 12) Has a player ever averaged a triple-double for an entire season?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionTwelve" value = "correct" style="text-decoration: none;"> Yes<li>
+          <li><input type="radio" name = "questionTwelve" value = "incorrect" style="text-decoration: none;"> No<li>
+          <li><input class="startHidden" type="radio" name = "questionTwelve" value = "incorrect" style="text-decoration: none;"> <li>
+          <li><input class="startHidden"  type="radio" name = "questionTwelve" value = "incorrect" style="text-decoration: none;"> <li>
+        </ul>
+
+      <li> 13) How many seconds does an NBA team get to shoot?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionThirteen" value = "incorrect" style="text-decoration: none;"> 60 Seconds<li>
+          <li><input type="radio" name = "questionThirteen" value = "incorrect" style="text-decoration: none;"> 35 Seconds<li>
+          <li><input type="radio" name = "questionThirteen" value = "incorrect" style="text-decoration: none;"> 30 Seconds</li>
+          <li><input type="radio" name = "questionThirteen" value = "correct" style="text-decoration: none;"> 24 Seconds</li>
+        </ul>
+
+      <li> 14) Which player did NOT have a father who also played in the NBA?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionFourteen" value = "correct" style="text-decoration: none;"> Lebron James<li>
+          <li><input type="radio" name = "questionFourteen" value = "incorrect" style="text-decoration: none;"> Luke Walton<li>
+          <li><input type="radio" name = "questionFourteen" value = "incorrect" style="text-decoration: none;"> Klay Thompson</li>
+          <li><input type="radio" name = "questionFourteen" value = "incorrect" style="text-decoration: none;"> 24 Stephen Curry</li>
+        </ul>
+
+      <li> 15) Which player inspired the NBA logo?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionFifteen" value = "incorrect" style="text-decoration: none;"> Wilt Chamberlin<li>
+          <li><input type="radio" name = "questionFifteen" value = "incorrect" style="text-decoration: none;"> Bill Walton<li>
+          <li><input type="radio" name = "questionFifteen" value = "incorrect" style="text-decoration: none;"> Michael Jordan</li>
+          <li><input type="radio" name = "questionFifteen" value = "correct" style="text-decoration: none;"> Jerry West</li>
+        </ul>
+    
+      <li> 16) What were the New Orleans Pelicans previously called?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionSixteen" value = "incorrect" style="text-decoration: none;"> Sea Lions<li>
+          <li><input type="radio" name = "questionSixteen" value = "incorrect" style="text-decoration: none;"> Royals<li>
+          <li><input type="radio" name = "questionSixteen" value = "correct" style="text-decoration: none;"> Hornets</li>
+          <li><input type="radio" name = "questionSixteen" value = "incorrect" style="text-decoration: none;"> Rockets</li>
+        </ul>
+
+      <li> 17) In what season did the NBA adopt the 3-point shot?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionSeventeen" value = "incorrect" style="text-decoration: none;"> 1969-70<li>
+          <li><input type="radio" name = "questionSeventeen" value = "correct" style="text-decoration: none;"> 1979-80<li>
+          <li><input type="radio" name = "questionSeventeen" value = "incorrect" style="text-decoration: none;"> 1956-57</li>
+          <li><input type="radio" name = "questionSeventeen" value = "incorrect" style="text-decoration: none;"> 1965-66</li>
+        </ul>
+
+      <li> 18) What was the late NBA player Darryl Dawkins’ nickname?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionEighteen" value = "incorrect" style="text-decoration: none;"> All-World<li>
+          <li><input type="radio" name = "questionEighteen" value = "incorrect" style="text-decoration: none;"> Dunk'in Donut<li>
+          <li><input type="radio" name = "questionEighteen" value = "incorrect" style="text-decoration: none;"> The Pearl</li>
+          <li><input type="radio" name = "questionEighteen" value = "correct" style="text-decoration: none;"> Chocolate Thunder</li>
+        </ul>
+
+      <li> 19) What former NBA player became famous for marketing a brand of $15 sneakers?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionNineteen" value = "correct" style="text-decoration: none;"> Stephon Marbary<li>
+          <li><input type="radio" name = "questionNineteen" value = "incorrect" style="text-decoration: none;"> Stephen Curry<li>
+          <li><input type="radio" name = "questionNineteen" value = "incorrect" style="text-decoration: none;"> Michael Jordan</li>
+          <li><input type="radio" name = "questionNineteen" value = "incorrect" style="text-decoration: none;"> Kobe Bryant</li>
+        </ul>
+
+
+      <li> 20) How long does an NBA team have to get the ball across the midcourt line?</li>
+        <ul style="list-style-type: none;">
+          <li><input type="radio" name = "questionTwenty" value = "correct" style="text-decoration: none;"> 8 Seconds<li>
+          <li><input type="radio" name = "questionTwenty" value = "incorrect" style="text-decoration: none;"> 5 Seconds<li>
+          <li><input type="radio" name = "questionTwenty" value = "incorrect" style="text-decoration: none;"> 10 Seconds</li>
+          <li><input type="radio" name = "questionTwenty" value = "incorrect" style="text-decoration: none;"> 24 Seconds</li>
+        </ul>
+
+    </ol>
+
+	</div>
+
+  <div id="divResults" class="divResultsContainer  startHidden">
+       <!-- <h1> TIME'S UP! </h1> -->
+
+        <h2 id="resultsScore">Score <span id="scoreSpan">  </span> </h2>
+
+        <p id="answersCorrectP"> Correct:&nbsp;<span id="answersCorrectSpan"> 0</span></p>
+
+        <p id="answersInCorrectP"> Incorrect:&nbsp;<span id="answersInCorrectSpan"> 0</span></p>
+       
+        <p id="unAnsweredP"> Unanswered:&nbsp;<span id="unAnsweredSpan"> 0</span></p>
+
+
+
+  </div>
+
+
+</body>
+</html>
