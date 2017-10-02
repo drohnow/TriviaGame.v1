@@ -87,7 +87,7 @@ body {
 
 .divTriviaContainer {
 	width: 600px;
-	height: 750px;
+	height: 650px;
   background-image: url("../images/nbaBG2.jpg");
   background-size: 870px 800px;
   background-repeat: no-repeat;
@@ -277,8 +277,8 @@ body {
   border-radius: 16px;
   
   position: absolute;
-  right: 200px;
-  top: 10px;
+  left: 400px;
+  top: 700px;
   z-index: 3;
   text-align: center;
   line-height: 70px;

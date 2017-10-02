@@ -141,7 +141,7 @@ $("#startButton").click(function() {
 		$("#divTimer").removeClass("startHidden");
 		$("#divTimer").animate({ left: "-=400px" }, 1000);
 		$("#divDone").removeClass("startHidden")
-		$("#divDone").animate({ left: "-=400px" }, 1000);
+		
 		$("#divYellTimer").removeClass("startHidden");
 		
 
