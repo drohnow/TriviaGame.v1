@@ -22,24 +22,24 @@ $('body').append(divStartButton);
 
 
 
-var imgLebronJames = $('<img>');
-$('body').append(imgLebronJames);
-$(imgLebronJames).addClass("imgNBA");
-$(imgLebronJames).attr("src", "./assets/images/imgLebronJames.jpg")
-$(imgLebronJames).attr("id", "imgLebronJames")
+//var imgLebronJames = $('<img>');
+//$('body').append(imgLebronJames);
+//$(imgLebronJames).addClass("imgNBA");
+//$(imgLebronJames).attr("src", "./assets/images/imgLebronJames.jpg")
+//$(imgLebronJames).attr("id", "imgLebronJames")
 
 
-var imgLarryBird = $('<img>');
-$('body').append(imgLarryBird);
-$(imgLarryBird).addClass("imgNBA");
-$(imgLarryBird).attr("src", "./assets/images/imgLarryBird.jpeg")
-$(imgLarryBird).attr("id", "imgLarryBird")
+//var imgLarryBird = $('<img>');
+//$('body').append(imgLarryBird);
+//$(imgLarryBird).addClass("imgNBA");
+//$(imgLarryBird).attr("src", "./assets/images/imgLarryBird.jpeg")
+//$(imgLarryBird).attr("id", "imgLarryBird")
 
-var imgMJ = $('<img>');
-$('body').append(imgMJ);
-$(imgMJ).addClass("imgNBA");
-$(imgMJ).attr("src", "./assets/images/imgMJ.jpg")
-$(imgMJ).attr("id", "imgMJ")
+//var imgMJ = $('<img>');
+//$('body').append(imgMJ);
+//$(imgMJ).addClass("imgNBA");
+//$(imgMJ).attr("src", "./assets/images/imgMJ.jpg")
+//$(imgMJ).attr("id", "imgMJ")
 
 var imgMagic = $('<img>');
 $('body').append(imgMagic);
