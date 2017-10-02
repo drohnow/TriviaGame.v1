@@ -114,9 +114,9 @@ $("#startButton").click(function() {
 		$(this).fadeTo( function() {
 			$(this).slideUp("50000");
 
-			$("#imgLebronJames").animate({ left: "-=600px" }, 1000);
-			$("#imgLarryBird").animate({ left: "-=600px" }, 1000);
-			$("#imgMJ").animate({ left: "-=600px" }, 1000);
+			//$("#imgLebronJames").animate({ left: "-=600px" }, 1000);
+			//$("#imgLarryBird").animate({ left: "-=600px" }, 1000);
+			//$("#imgMJ").animate({ left: "-=600px" }, 1000);
 
 			$("#imgMagic").animate({ right: "-=302px" }, 1000);
 			$("#imgKobeBryant").animate({ right: "-=302px" }, 1000);
@@ -201,10 +201,20 @@ $("#startButton").click(function() {
 
 
 		function fnStop() {
-		  clearInterval(intervalID)
+		  clearInterval(intervalID);
 		  $("#triviaContainer").hide();
+		  $("#imgMagic").hide();
+		  $("#imgKobeBryant").hide();
+		  $("#imgStephenCurry").hide();
+		  $("#imgKyrie").hide();
+		  $("#divBanner").hide();
+		  $("#divTimer").hide();
+		  $(".divTriviaBanner").hide();
+		  $("#divDone").hide();
+		  $("#divYellTimer").hide();
 		  $("#divResults").show();
 		   audio.play();
+
 
 		  fnShowResults()
 		}

@@ -227,21 +227,18 @@ body {
 
 
 .divResultsContainer {
-  width: 900px;
-  height: 800px;
+  width: 100%;
+  height: 900px;
   background-color: #e67300;
   overflow: scroll;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url("../images/imgJordanBG.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 900px 800px;
+  background-size: cover;
   background-color: Gray;
   opacity: .8;
-   position: absolute;
-  top: 89px;
-  left: 380px;
+  position: relative;
+
 }
 
 /*.divResultsContainer h1 {
@@ -256,13 +253,13 @@ body {
   font-size: 80px;
   margin-top: 10px;
   color: White;
-  text-align: center;
+  margin-left: 300px;
 }
 
 .divResultsContainer p {
-  margin-left: 550px;
+  margin-left: 300px;
   font-size: 48px;
-  margin-top: 65px;
+  margin-top: 100px;
   color: White;
   
 }
